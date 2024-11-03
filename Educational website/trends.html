@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Trends</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            background-color: #050505;
+            color: rgb(37, 35, 35);
+            padding: 10px;
+            text-align: center;
+            animation: slideIn 1s ease-in;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            color: rgb(0, 0, 0);
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .image-gallery img {
+            width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            animation: zoomIn 0.5s ease forwards;
+            opacity: 0;
+            animation-delay: 0.3s;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #000000;
+            color: white;
+        }
+
+       
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid #0033ff;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        td {
+            color: #333;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        h3, h4 {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        h4 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><b>Educational Trends</b></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Current Educational Trends</h2>
+            <p>Explore the latest trends in education that are shaping the future of learning.</p>
+
+            <div class="image-gallery">
+                <img src="png-transparent-education-school-icon-children-education-infographic-child-text-thumbnail.png" alt="Online Learning">
+                <img src="images (5).jpeg" alt="Mental Health Focus">
+                <img src="images (18).jpeg" alt="AI in Education">
+            </div>
+
+            <h3>Details on Trends</h3>
+            <b><u><h4>1. Embracing Online Learning</h4></u></b>
+            <p>Online learning has become a cornerstone of modern education, offering flexibility and accessibility like never before. With the advancement of technology, learners can access a wealth of information and courses from the comfort of their homes...</p>
+
+            <b><u><h4>2. Focus on Mental Health</h4></u></b>
+            <p>The focus on mental health within educational settings has gained significant traction in recent years. Educators and institutions recognize that academic success is intertwined with emotional well-being...</p>
+
+            <b><u><h4>3. Integration of AI in Education</h4></u></b>
+            <p>The integration of Artificial Intelligence (AI) in education is revolutionizing the way students learn and interact with content...</p>
+
+            <h3>Impact of Trends</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trend</th>
+                        <th>Impact on Education</th>
+                        <th>Future Implications</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Online Learning</td>
+                        <td>Increased accessibility and flexibility for learners...</td>
+                        <td>Potential for more global collaboration...</td>
+                    </tr>
+                    <tr>
+                        <td>Mental Health Focus</td>
+                        <td>Improved student well-being...</td>
+                        <td>A shift in curriculum...</td>
+                    </tr>
+                    <tr>
+                        <td>AI Integration</td>
+                        <td>More tailored learning experiences...</td>
+                        <td>Greater reliance on technology...</td>
+                    </tr>
+                    <tr>
+                        <td>Personalized Learning</td>
+                        <td>Custom learning pathways...</td>
+                        <td>Increased use of data analytics...</td>
+                    </tr>
+                    <tr>
+                        <td>Collaboration and Community Learning</td>
+                        <td>Enhanced opportunities for peer-to-peer learning...</td>
+                        <td>Greater emphasis on interdisciplinary approaches...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Educational Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
